@@ -49,6 +49,7 @@ class GenRules(object):
             if conf>=self.minconf:
                 self.count+=1
                 print("%-3s => %-3s\tConfidence=%.0f%%"%(GenRules.__toTrans(self,t),GenRules.__toTrans(self,GenRules.__sub(k,t)),conf*100))
+            else: continue
             if Nm>2:
                 GenRules.__genrules(self,k,t,Nk,Nm-1)
         return
