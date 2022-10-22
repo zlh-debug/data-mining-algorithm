@@ -75,7 +75,7 @@ class Apriori(object):
     def __has_infrequent_subset (self,c):
         #"1,2,3"  "2,3,4"
         for i in range(len(self.S)):
-            if self.S[i] in c:
+            if Apriori.__isSubset(self.S[i],c):
                 return True
         return False
 

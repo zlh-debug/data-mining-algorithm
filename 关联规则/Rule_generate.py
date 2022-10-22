@@ -4,7 +4,7 @@ class GenRules(object):
     def __init__(self,minconf,map,L,C):
         self.minconf=minconf
         self.map=map #字符串数字和物品的对应关系
-        self.L=L[0:-1] #所有频繁项集
+        self.L=L #所有频繁项集
         self.flag=None #标记算过的规则，去重
         self.count=0 #记录生成强关联规则的数目
         self.C=C #k-候选集
